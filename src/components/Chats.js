@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom'
 import { ChatEngine } from 'react-chat-engine'
 import { auth } from '../firebase'
 import axios from 'axios'
+import Avatar from 'react-avatar';
 
 import { useAuth } from '../contexts/AuthContext'
 
@@ -71,7 +72,8 @@ const Chats = () => {
         <div className="chats-page">
             <div className="nav-bar">
                 <div className="logo-tab">Sibling Chat</div>
-                <div className="logout-tab" onClick={handleLogout}>Logout</div>
+                <Avatar className="profile" facebookId="100008343750912" size='45'/>
+                <button className="logout-tab" onClick={handleLogout}>Logout</button>
 
             </div>
             <ChatEngine
