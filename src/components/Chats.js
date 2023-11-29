@@ -71,7 +71,7 @@ const Chats = () => {
     return (
         <div className="chats-page">
             <div className="nav-bar">
-                <div className="logo-tab">Jet Chat</div>
+                <div className="logo-tab">Sibling Chat</div>
                 <Avatar className="profile" facebookId="100008343750912" size='45'/>
                 <button className="logout-tab" onClick={handleLogout}>Logout</button>
 
